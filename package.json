@@ -1,0 +1,8 @@
+{
+  "name": "11ty pagination issue",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.2",
+    "luxon": "^1.12.1"
+  }
+}

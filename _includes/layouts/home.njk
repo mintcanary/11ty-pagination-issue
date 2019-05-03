@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.news
+  size: 2
+  alias: news
+---
+
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+{%- for story in news -%}
+  <article>
+    <h1>{{ story.data.title }}</h1>
+    <time>{{ story.data.date | ddMMyy }}</time>
+    {{ story.templateContent | safe }}
+  </article>
+{%- endfor -%}
